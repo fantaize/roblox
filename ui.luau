@@ -554,7 +554,7 @@
 	-- elements
 		local tooltip_sgui = library:create("ScreenGui", {
 			Enabled = true,
-			Parent = gethui(),
+			Parent = lp.PlayerGui,
 			Name = "",
 			DisplayOrder = 500,
 		})
@@ -663,7 +663,7 @@
 				-- Panel
 					items.sgui = library:create("ScreenGui", {
 						Enabled = true,
-						Parent = gethui(),
+						Parent = lp.PlayerGui,
 						Name = ""
 					})
 
@@ -930,13 +930,13 @@
 
 		local sgui = library:create("ScreenGui", {
 			Enabled = true,
-			Parent = gethui(),
+			Parent = lp.PlayerGui,
 			Name = "",
 			DisplayOrder = 999999,
 		})
 
 		local notif_holder = library:create("ScreenGui", {
-			Parent = gethui(),
+			Parent = lp.PlayerGui,
 			Name = "",
 			IgnoreGuiInset = true,
 			DisplayOrder = 999999,
@@ -1236,7 +1236,7 @@
 
 			library.cache = library:create("ScreenGui", {
 				Enabled = false,
-				Parent = gethui(),
+				Parent = lp.PlayerGui,
 				Name = ""
 			})
 
@@ -5928,3 +5928,4 @@
 --
 
 return library, themes;
+
